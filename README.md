@@ -1,5 +1,5 @@
 # UberFlickrChallenge
-Photo collection using Flickr API'
+Photo collection using Flickr API
 
 -> MVC Architecture is followed.
 -> HomeViewController displays collection of pictures using Flickr Search API.
