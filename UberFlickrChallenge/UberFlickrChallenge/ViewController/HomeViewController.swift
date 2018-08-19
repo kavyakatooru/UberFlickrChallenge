@@ -187,13 +187,6 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         self.getFlickerPhotos(searchText: searchStr!, pageNumber: self.page!)
         print("search Clicked")
     }
-    
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        self.photoObjArray?.removeAll()
-        self.searchViewOn = false
-        self.page = 1
-        self.getFlickerPhotos(searchText: "", pageNumber: self.page!)
-    }
 }
 
 
