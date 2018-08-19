@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		246D9ABF2127DB6F009AECEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246D9ABE2127DB6F009AECEA /* AppDelegate.swift */; };
+		246D9AC62127DB70009AECEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 246D9AC52127DB70009AECEA /* Assets.xcassets */; };
+		246D9AC92127DB70009AECEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246D9AC72127DB70009AECEA /* LaunchScreen.storyboard */; };
+		246D9AD42127DB70009AECEA /* UberFlickrChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246D9AD32127DB70009AECEA /* UberFlickrChallengeTests.swift */; };
+		246D9ADF2127DB70009AECEA /* UberFlickrChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246D9ADE2127DB70009AECEA /* UberFlickrChallengeUITests.swift */; };
+		246D9AF02127DC4C009AECEA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246D9AEE2127DC4C009AECEA /* HomeViewController.swift */; };
+		246D9AF12127DC4C009AECEA /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 246D9AEF2127DC4C009AECEA /* HomeViewController.xib */; };
+		246D9AF32127DCE9009AECEA /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246D9AF22127DCE9009AECEA /* Photo.swift */; };
+		246D9AF72127E198009AECEA /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246D9AF52127E198009AECEA /* PhotoCollectionViewCell.swift */; };
+		246D9AF82127E198009AECEA /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 246D9AF62127E198009AECEA /* PhotoCollectionViewCell.xib */; };
+		246D9AFA212851B3009AECEA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246D9AF9212851B3009AECEA /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		246D9AD02127DB70009AECEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 246D9AB32127DB6F009AECEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 246D9ABA2127DB6F009AECEA;
+			remoteInfo = UberFlickrChallenge;
+		};
+		246D9ADB2127DB70009AECEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 246D9AB32127DB6F009AECEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 246D9ABA2127DB6F009AECEA;
+			remoteInfo = UberFlickrChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		246D9ABB2127DB6F009AECEA /* UberFlickrChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberFlickrChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		246D9ABE2127DB6F009AECEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		246D9AC52127DB70009AECEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		246D9AC82127DB70009AECEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		246D9ACA2127DB70009AECEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		246D9ACF2127DB70009AECEA /* UberFlickrChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UberFlickrChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		246D9AD32127DB70009AECEA /* UberFlickrChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberFlickrChallengeTests.swift; sourceTree = "<group>"; };
+		246D9AD52127DB70009AECEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		246D9ADA2127DB70009AECEA /* UberFlickrChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UberFlickrChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		246D9ADE2127DB70009AECEA /* UberFlickrChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberFlickrChallengeUITests.swift; sourceTree = "<group>"; };
+		246D9AE02127DB70009AECEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		246D9AEE2127DC4C009AECEA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		246D9AEF2127DC4C009AECEA /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		246D9AF22127DCE9009AECEA /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		246D9AF52127E198009AECEA /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		246D9AF62127E198009AECEA /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		246D9AF9212851B3009AECEA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		246D9AB82127DB6F009AECEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		246D9ACC2127DB70009AECEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		246D9AD72127DB70009AECEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		246D9AB22127DB6F009AECEA = {
+			isa = PBXGroup;
+			children = (
+				246D9ABD2127DB6F009AECEA /* UberFlickrChallenge */,
+				246D9AD22127DB70009AECEA /* UberFlickrChallengeTests */,
+				246D9ADD2127DB70009AECEA /* UberFlickrChallengeUITests */,
+				246D9ABC2127DB6F009AECEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		246D9ABC2127DB6F009AECEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				246D9ABB2127DB6F009AECEA /* UberFlickrChallenge.app */,
+				246D9ACF2127DB70009AECEA /* UberFlickrChallengeTests.xctest */,
+				246D9ADA2127DB70009AECEA /* UberFlickrChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		246D9ABD2127DB6F009AECEA /* UberFlickrChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				246D9AF42127E164009AECEA /* Cell */,
+				246D9AEC2127DBE8009AECEA /* Model */,
+				246D9AED2127DBF0009AECEA /* ViewController */,
+				246D9ABE2127DB6F009AECEA /* AppDelegate.swift */,
+				246D9AC52127DB70009AECEA /* Assets.xcassets */,
+				246D9AC72127DB70009AECEA /* LaunchScreen.storyboard */,
+				246D9AF9212851B3009AECEA /* Constants.swift */,
+				246D9ACA2127DB70009AECEA /* Info.plist */,
+			);
+			path = UberFlickrChallenge;
+			sourceTree = "<group>";
+		};
+		246D9AD22127DB70009AECEA /* UberFlickrChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				246D9AD32127DB70009AECEA /* UberFlickrChallengeTests.swift */,
+				246D9AD52127DB70009AECEA /* Info.plist */,
+			);
+			path = UberFlickrChallengeTests;
+			sourceTree = "<group>";
+		};
+		246D9ADD2127DB70009AECEA /* UberFlickrChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				246D9ADE2127DB70009AECEA /* UberFlickrChallengeUITests.swift */,
+				246D9AE02127DB70009AECEA /* Info.plist */,
+			);
+			path = UberFlickrChallengeUITests;
+			sourceTree = "<group>";
+		};
+		246D9AEC2127DBE8009AECEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				246D9AF22127DCE9009AECEA /* Photo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		246D9AED2127DBF0009AECEA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				246D9AEE2127DC4C009AECEA /* HomeViewController.swift */,
+				246D9AEF2127DC4C009AECEA /* HomeViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		246D9AF42127E164009AECEA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				246D9AF52127E198009AECEA /* PhotoCollectionViewCell.swift */,
+				246D9AF62127E198009AECEA /* PhotoCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		246D9ABA2127DB6F009AECEA /* UberFlickrChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 246D9AE32127DB70009AECEA /* Build configuration list for PBXNativeTarget "UberFlickrChallenge" */;
+			buildPhases = (
+				246D9AB72127DB6F009AECEA /* Sources */,
+				246D9AB82127DB6F009AECEA /* Frameworks */,
+				246D9AB92127DB6F009AECEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UberFlickrChallenge;
+			productName = UberFlickrChallenge;
+			productReference = 246D9ABB2127DB6F009AECEA /* UberFlickrChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		246D9ACE2127DB70009AECEA /* UberFlickrChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 246D9AE62127DB70009AECEA /* Build configuration list for PBXNativeTarget "UberFlickrChallengeTests" */;
+			buildPhases = (
+				246D9ACB2127DB70009AECEA /* Sources */,
+				246D9ACC2127DB70009AECEA /* Frameworks */,
+				246D9ACD2127DB70009AECEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				246D9AD12127DB70009AECEA /* PBXTargetDependency */,
+			);
+			name = UberFlickrChallengeTests;
+			productName = UberFlickrChallengeTests;
+			productReference = 246D9ACF2127DB70009AECEA /* UberFlickrChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		246D9AD92127DB70009AECEA /* UberFlickrChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 246D9AE92127DB70009AECEA /* Build configuration list for PBXNativeTarget "UberFlickrChallengeUITests" */;
+			buildPhases = (
+				246D9AD62127DB70009AECEA /* Sources */,
+				246D9AD72127DB70009AECEA /* Frameworks */,
+				246D9AD82127DB70009AECEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				246D9ADC2127DB70009AECEA /* PBXTargetDependency */,
+			);
+			name = UberFlickrChallengeUITests;
+			productName = UberFlickrChallengeUITests;
+			productReference = 246D9ADA2127DB70009AECEA /* UberFlickrChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		246D9AB32127DB6F009AECEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Level;
+				TargetAttributes = {
+					246D9ABA2127DB6F009AECEA = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					246D9ACE2127DB70009AECEA = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 246D9ABA2127DB6F009AECEA;
+					};
+					246D9AD92127DB70009AECEA = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 246D9ABA2127DB6F009AECEA;
+					};
+				};
+			};
+			buildConfigurationList = 246D9AB62127DB6F009AECEA /* Build configuration list for PBXProject "UberFlickrChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 246D9AB22127DB6F009AECEA;
+			productRefGroup = 246D9ABC2127DB6F009AECEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				246D9ABA2127DB6F009AECEA /* UberFlickrChallenge */,
+				246D9ACE2127DB70009AECEA /* UberFlickrChallengeTests */,
+				246D9AD92127DB70009AECEA /* UberFlickrChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		246D9AB92127DB6F009AECEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246D9AC92127DB70009AECEA /* LaunchScreen.storyboard in Resources */,
+				246D9AF82127E198009AECEA /* PhotoCollectionViewCell.xib in Resources */,
+				246D9AC62127DB70009AECEA /* Assets.xcassets in Resources */,
+				246D9AF12127DC4C009AECEA /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		246D9ACD2127DB70009AECEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		246D9AD82127DB70009AECEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		246D9AB72127DB6F009AECEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246D9AFA212851B3009AECEA /* Constants.swift in Sources */,
+				246D9AF32127DCE9009AECEA /* Photo.swift in Sources */,
+				246D9AF72127E198009AECEA /* PhotoCollectionViewCell.swift in Sources */,
+				246D9ABF2127DB6F009AECEA /* AppDelegate.swift in Sources */,
+				246D9AF02127DC4C009AECEA /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		246D9ACB2127DB70009AECEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246D9AD42127DB70009AECEA /* UberFlickrChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		246D9AD62127DB70009AECEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246D9ADF2127DB70009AECEA /* UberFlickrChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		246D9AD12127DB70009AECEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 246D9ABA2127DB6F009AECEA /* UberFlickrChallenge */;
+			targetProxy = 246D9AD02127DB70009AECEA /* PBXContainerItemProxy */;
+		};
+		246D9ADC2127DB70009AECEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 246D9ABA2127DB6F009AECEA /* UberFlickrChallenge */;
+			targetProxy = 246D9ADB2127DB70009AECEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		246D9AC72127DB70009AECEA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				246D9AC82127DB70009AECEA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		246D9AE12127DB70009AECEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		246D9AE22127DB70009AECEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		246D9AE42127DB70009AECEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YFV65V36UG;
+				INFOPLIST_FILE = UberFlickrChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.challenge.UberFlickrChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		246D9AE52127DB70009AECEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YFV65V36UG;
+				INFOPLIST_FILE = UberFlickrChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.challenge.UberFlickrChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		246D9AE72127DB70009AECEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YFV65V36UG;
+				INFOPLIST_FILE = UberFlickrChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.challenge.UberFlickrChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UberFlickrChallenge.app/UberFlickrChallenge";
+			};
+			name = Debug;
+		};
+		246D9AE82127DB70009AECEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YFV65V36UG;
+				INFOPLIST_FILE = UberFlickrChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.challenge.UberFlickrChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UberFlickrChallenge.app/UberFlickrChallenge";
+			};
+			name = Release;
+		};
+		246D9AEA2127DB70009AECEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YFV65V36UG;
+				INFOPLIST_FILE = UberFlickrChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.challenge.UberFlickrChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UberFlickrChallenge;
+			};
+			name = Debug;
+		};
+		246D9AEB2127DB70009AECEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YFV65V36UG;
+				INFOPLIST_FILE = UberFlickrChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.challenge.UberFlickrChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UberFlickrChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		246D9AB62127DB6F009AECEA /* Build configuration list for PBXProject "UberFlickrChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				246D9AE12127DB70009AECEA /* Debug */,
+				246D9AE22127DB70009AECEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		246D9AE32127DB70009AECEA /* Build configuration list for PBXNativeTarget "UberFlickrChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				246D9AE42127DB70009AECEA /* Debug */,
+				246D9AE52127DB70009AECEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		246D9AE62127DB70009AECEA /* Build configuration list for PBXNativeTarget "UberFlickrChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				246D9AE72127DB70009AECEA /* Debug */,
+				246D9AE82127DB70009AECEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		246D9AE92127DB70009AECEA /* Build configuration list for PBXNativeTarget "UberFlickrChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				246D9AEA2127DB70009AECEA /* Debug */,
+				246D9AEB2127DB70009AECEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 246D9AB32127DB6F009AECEA /* Project object */;
+}

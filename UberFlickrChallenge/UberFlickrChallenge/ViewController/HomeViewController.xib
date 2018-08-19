@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="UberFlickrChallenge" customModuleProvider="target">
+            <connections>
+                <outlet property="photoCollectionView" destination="aXk-Sk-P5d" id="yOe-RL-l2K"/>
+                <outlet property="photoCollectionViewCell" destination="aXk-Sk-P5d" id="dzi-Z4-9P4"/>
+                <outlet property="searchBar" destination="MCE-vO-YC3" id="YDI-1M-H2n"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="aXk-Sk-P5d">
+                    <rect key="frame" x="0.0" y="76" width="375" height="591"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="A6t-VJ-ACr">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="lD3-8Y-t3C"/>
+                        <outlet property="delegate" destination="-1" id="JnA-od-iuH"/>
+                    </connections>
+                </collectionView>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="MCE-vO-YC3">
+                    <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="mG7-FM-dUy"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="GLZ-bC-4e4"/>
+                    </connections>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MCE-vO-YC3" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Eeb-Vv-mhD"/>
+                <constraint firstItem="aXk-Sk-P5d" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Km4-lI-s63"/>
+                <constraint firstItem="MCE-vO-YC3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="MHg-aK-Mtc"/>
+                <constraint firstItem="aXk-Sk-P5d" firstAttribute="top" secondItem="MCE-vO-YC3" secondAttribute="bottom" id="Q3D-86-ToO"/>
+                <constraint firstItem="aXk-Sk-P5d" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="eOl-eK-5Ri"/>
+                <constraint firstItem="MCE-vO-YC3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ld2-C0-JFd"/>
+                <constraint firstItem="aXk-Sk-P5d" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="oAe-9X-eAA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
